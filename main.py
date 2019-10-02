@@ -19,7 +19,7 @@ def main():
         if not (winGame(board, "X")):
             move = Ai(board)
             if move == 0:
-                print("Tie game")
+                print("Game is a Tie")
                 break
             else:
                 Enter("O", move, board)
