@@ -1,5 +1,11 @@
-from utils import boardFull, Enter, winGame
+from tictactoe.utils import boardFull, Enter, winGame
 
+selected_moves={
+    1:[2,4],
+    3:[2,6],
+    7:[8,4],
+    9:[8,6]
+}
 
 def playerOneMove(board):
     if boardFull(board):
@@ -23,6 +29,7 @@ def playerOneMove(board):
 
 
 def Ai(board):
+    """ This function implements our AI"""
     openMoves = [x for x, letter in enumerate(board) if letter == " " and x != 0]
     move = 0
     for let in ["O", "X"]:
@@ -32,13 +39,18 @@ def Ai(board):
             if winGame(boardcopy, let):
                 move = i
                 return move
+    #check if there are open moves
+    if len(openMoves) == 0:
+        return 0
+    #check if the center is open
     if 5 in openMoves:
         move = 5
         return move
     else:
-        import random
-
-        if len(openMoves) != 0:
-            move = random.choice(openMoves)
-            return move
-        return 0
+        #selects a winning move combination
+        for k, v in selected_moves.items():
+            if k in openMoves:
+                return k
+            elif k not in openMoves and boardcopy[k] == "O":
+                for v in openMoves:
+                    return v

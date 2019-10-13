@@ -1,5 +1,5 @@
 def drawBoard(pos):
-    """function for drawing the playing board
+    """function for drawing the board
     args: 
         pos: index position to put our symbol
 

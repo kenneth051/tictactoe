@@ -1,7 +1,7 @@
 def Enter(symbol, pos, board):
     """We insert a letter into our game
     args:
-        symbol: the playing element
+        symbol: the selected element
         pos: The position we are inserting the element
     """
     if pos:
