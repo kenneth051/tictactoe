@@ -1,6 +1,6 @@
-from tictactoe.board import drawBoard
-from tictactoe.players import Ai, playerOneMove
-from tictactoe.utils import boardFull, winGame, Enter
+from game.board import drawBoard
+from game.players import Ai, playerOneMove
+from game.utils import boardFull, winGame, Enter
 
 board = [" " for x in range(10)]
 board[0]="-"

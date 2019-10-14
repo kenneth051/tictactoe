@@ -20,7 +20,7 @@ def winGame(t, c):
         or (t[7] == c and t[8] == c and t[9] == c)
         or (t[1] == c and t[4] == c and t[7] == c)
         or (t[2] == c and t[5] == c and t[8] == c)
-        or (t[3] == c and t[6] == c and t[7] == c)
+        or (t[3] == c and t[6] == c and t[9] == c)
         or (t[1] == c and t[5] == c and t[9] == c)
         or (t[3] == c and t[5] == c and t[7] == c)
     )

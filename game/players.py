@@ -1,4 +1,4 @@
-from tictactoe.utils import boardFull, Enter, winGame
+from game.utils import boardFull, Enter, winGame
 
 selected_moves={
     1:[2,4],

@@ -3,10 +3,10 @@ from unittest.mock import patch
 from io import StringIO 
 import sys
 import builtins
-from ..main import main
-from ..board import drawBoard
-from ..players import playerOneMove,Ai
-from ..utils import Enter, boardFull, winGame
+from game.main import main
+from game.board import drawBoard
+from game.players import playerOneMove,Ai
+from game.utils import Enter, boardFull, winGame
 
 class TicTacToe_Test(unittest.TestCase):
     def setUp(self):
