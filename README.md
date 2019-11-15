@@ -1,4 +1,8 @@
-**A simple TICTACTOE game.**
-Aplayer gets to play against a basic AI
+[![Build Status](https://travis-ci.org/kenneth051/tictactoe.svg?branch=feedback)](https://travis-ci.org/kenneth051/tictactoe)
 
-To start the game, run the command `python main.py` or `python3 main.py` in your terminal or command line.
+[![Coverage Status](https://coveralls.io/repos/github/kenneth051/tictactoe/badge.svg?branch=feedback)](https://coveralls.io/github/kenneth051/tictactoe?branch=feedback)
+
+**A simple TICTACTOE game.**
+A player gets to play against a basic AI
+
+    start the game by running the command `python3 run.py`or `python run.py` in the terminal or command line
