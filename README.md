@@ -4,6 +4,6 @@
 **A simple TICTACTOE game.**
 A player gets to play against a basic AI.In this version, a player never wins.The best they can do is draw.
 
-Right now it is just a command line game, UI coming soon.
+Right now it is a command line game, UI coming soon.
 
     start the game by running the command `python3 run.py`or `python run.py` in the terminal or command line
